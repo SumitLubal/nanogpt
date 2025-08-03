@@ -14,7 +14,7 @@ from transformers import (
 MODEL_NAME = "gpt2"
 
 # The path to your training data
-TRAIN_FILE = "input.txt"
+TRAIN_FILE = "smart_home_training_data_100.json"
 
 # The directory where the fine-tuned model will be saved
 OUTPUT_DIR = "./fine-tuned-model"

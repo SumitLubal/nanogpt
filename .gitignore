@@ -3,3 +3,4 @@ __pycache__
 fine-tuned-model
 out
 *.lock
+cached_*

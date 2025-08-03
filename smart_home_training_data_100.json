@@ -1,0 +1,2254 @@
+{
+  "training_data": [
+    {
+      "input": {
+        "timestamp": "2025-08-02T22:49:42.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "living_room",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "living_room",
+            "level_lux": 8
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the living room while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-02T23:51:07.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "living_room",
+            "voc_level": "high",
+            "value_ppm": 6
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'living_room')",
+        "notification": "Air quality in the living room is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T00:25:47.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "living_room",
+            "voc_level": "high",
+            "value_ppm": 7
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'living_room')",
+        "notification": "Air quality in the living room is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T02:42:19.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "kitchen",
+            "level_lux": 3
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the kitchen while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T05:19:54.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T05:47:06.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "main_bedroom",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T08:12:53.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "main_bedroom",
+            "voc_level": "high",
+            "value_ppm": 4
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'main_bedroom')",
+        "notification": "Air quality in the main bedroom is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T08:46:17.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "hallway",
+            "level_lux": 4
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the hallway while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T08:55:31.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T09:07:17.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "kitchen",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T12:02:50.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T12:50:50.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "kitchen",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the kitchen! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T14:13:43.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "guest_bedroom",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "guest_bedroom",
+            "level_lux": 14
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the guest bedroom while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T16:21:20.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "kitchen",
+            "level_lux": 4
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('kitchen', 79)",
+        "notification": "Turning on the kitchen lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T17:44:09.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "bathroom",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "bathroom",
+            "level_lux": 6
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the bathroom while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T20:38:53.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "bathroom",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "bathroom",
+            "level_lux": 13
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the bathroom while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T22:57:42.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "kitchen",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'kitchen_zone')",
+        "notification": "Kitchen window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T23:06:28.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "guest_bedroom",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "guest_bedroom",
+            "level_lux": 2
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the guest bedroom while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-03T23:52:04.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "bathroom",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the bathroom! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T00:37:48.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "main_bedroom",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T02:16:03.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T03:38:44.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "kitchen",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T06:12:08.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "hallway",
+            "level_ppm": 22
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the hallway! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T07:04:09.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "bathroom",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the bathroom! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T09:33:43.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T11:35:03.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 489
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 22); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T13:24:51.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "hallway",
+            "level_lux": 10
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('hallway', 79)",
+        "notification": "Turning on the hallway lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T16:17:26.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "laundry_room",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the laundry room! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T17:39:21.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "laundry_room",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the laundry room! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T20:28:03.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-04T22:15:43.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 134
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 22); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T00:47:29.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "kitchen",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'kitchen_zone')",
+        "notification": "Kitchen window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T03:43:14.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "hallway",
+            "level_lux": 8
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the hallway while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T05:16:31.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "bathroom",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "bathroom",
+            "level_lux": 3
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the bathroom while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T07:59:19.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "kitchen",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the kitchen! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T10:04:07.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "hallway",
+            "level_lux": 17
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('hallway', 74)",
+        "notification": "Turning on the hallway lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T13:04:32.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T13:48:23.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "kitchen",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'kitchen_zone')",
+        "notification": "Kitchen window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T15:24:18.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "main_bedroom",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'main_bedroom_zone')",
+        "notification": "Main bedroom window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T18:12:54.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 319
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 22); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T20:13:06.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "hallway",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-05T21:59:12.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "hallway",
+            "level_ppm": 34
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the hallway! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T00:02:04.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 252
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 21); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T01:04:10.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 398
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 21); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T02:49:06.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T05:04:57.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "kitchen",
+            "level_lux": 16
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('kitchen', 83)",
+        "notification": "Turning on the kitchen lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T06:50:27.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T07:10:21.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "garage",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "garage",
+            "level_ppm": 26
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the garage! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T08:23:13.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "main_bedroom",
+            "voc_level": "high",
+            "value_ppm": 5
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'main_bedroom')",
+        "notification": "Air quality in the main bedroom is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T09:13:07.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 356
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 21); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T09:30:35.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "garage",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "garage",
+            "level_ppm": 45
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the garage! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T11:59:31.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 190
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 20); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T14:50:08.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "laundry_room",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the laundry room! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T15:58:22.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T17:09:24.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "kitchen",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'kitchen_zone')",
+        "notification": "Kitchen window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T19:41:58.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "main_bedroom",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "level_lux": 10
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the main bedroom while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-06T22:25:29.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "kitchen",
+            "level_lux": 6
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the kitchen while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T00:24:26.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "living_room",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "living_room",
+            "level_lux": 7
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('living_room', 74)",
+        "notification": "Turning on the living room lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T02:47:44.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "kitchen",
+            "level_lux": 6
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the kitchen while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T04:08:37.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T05:46:21.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T07:48:24.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "hallway",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T10:15:20.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 108
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 21); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T11:58:30.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T13:41:19.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "bathroom",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the bathroom! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T15:42:36.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "bathroom",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the bathroom! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T18:28:28.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "living_room",
+            "voc_level": "high",
+            "value_ppm": 6
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'living_room')",
+        "notification": "Air quality in the living room is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T19:14:08.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T20:00:38.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "living_room",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "living_room",
+            "level_lux": 15
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('living_room', 85)",
+        "notification": "Turning on the living room lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T20:23:37.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "living_room",
+            "voc_level": "high",
+            "value_ppm": 5
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'living_room')",
+        "notification": "Air quality in the living room is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T20:56:22.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "main_bedroom",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'main_bedroom_zone')",
+        "notification": "Main bedroom window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-07T22:54:44.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 199
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 22); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T01:47:43.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "main_bedroom",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T03:58:03.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "kitchen",
+            "level_ppm": 29
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the kitchen! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T06:54:21.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 444
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 22); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T08:08:29.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "home_office",
+            "voc_level": "high",
+            "value_ppm": 3
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'home_office')",
+        "notification": "Air quality in the home office is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T08:55:47.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T11:46:56.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "main_bedroom",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'main_bedroom_zone')",
+        "notification": "Main bedroom window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T13:59:48.321190Z",
+        "sensors": [
+          {
+            "type": "water_leak",
+            "location": "laundry_room",
+            "status": "detected"
+          }
+        ]
+      },
+      "output": {
+        "action": "shutoff_main_water_valve(); send_push_notification()",
+        "notification": "CRITICAL LEAK: Water detected in the laundry room! Main water valve has been shut off.",
+        "log": "Water leak detected and mitigated. Urgent."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T16:50:54.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "home_office",
+            "voc_level": "high",
+            "value_ppm": 4
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'home_office')",
+        "notification": "Air quality in the home office is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T19:26:28.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "kitchen",
+            "level_ppm": 19
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the kitchen! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-08T21:41:04.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T00:03:33.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "home_office",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "home_office",
+            "level_lux": 4
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the home office while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T01:11:44.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "cool"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T02:36:02.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "main_bedroom",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'main_bedroom_zone')",
+        "notification": "Main bedroom window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T03:08:12.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "garage",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T05:32:10.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "kitchen",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "kitchen",
+            "level_ppm": 16
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the kitchen! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T08:02:16.321190Z",
+        "sensors": [
+          {
+            "type": "window",
+            "location": "living_room",
+            "status": "opened"
+          },
+          {
+            "type": "hvac",
+            "status": "heat"
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('pause', 'living_room_zone')",
+        "notification": "Living room window is open. Pausing HVAC to save energy.",
+        "log": "Energy saving: HVAC paused due to open window."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T09:03:17.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T11:21:32.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T12:33:28.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 198
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 21); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T13:39:08.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "home_office",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "home_office",
+            "level_lux": 18
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('home_office', 71)",
+        "notification": "Turning on the home office lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T15:16:42.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "guest_bedroom",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T16:20:22.321190Z",
+        "sensors": [
+          {
+            "type": "smoke",
+            "location": "hallway",
+            "status": "detected"
+          },
+          {
+            "type": "carbon_monoxide",
+            "location": "hallway",
+            "level_ppm": 16
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_fire_alarm; call_emergency_services(); shutoff_hvac()",
+        "notification": "EMERGENCY: Smoke detected in the hallway! Authorities have been notified.",
+        "log": "CRITICAL: Fire event detected. Emergency protocols activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T16:41:24.321190Z",
+        "sensors": [
+          {
+            "type": "door",
+            "location": "front_door",
+            "status": "closed"
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          },
+          {
+            "type": "temperature",
+            "location": "bathroom",
+            "value_celsius": 21.5
+          }
+        ]
+      },
+      "output": {
+        "action": "none",
+        "notification": "System nominal. All sensors reporting normal status.",
+        "log": "Standard system check. No action required."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T18:23:29.321190Z",
+        "sensors": [
+          {
+            "type": "air_quality",
+            "location": "main_bedroom",
+            "voc_level": "high",
+            "value_ppm": 3
+          }
+        ]
+      },
+      "output": {
+        "action": "turn_on_device('air_purifier', 'main_bedroom')",
+        "notification": "Air quality in the main bedroom is poor. Starting the air purifier.",
+        "log": "Environmental control: Air purifier activated."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T20:47:10.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "home_office",
+            "status": "detected"
+          },
+          {
+            "type": "light",
+            "location": "home_office",
+            "level_lux": 6
+          },
+          {
+            "type": "system_mode",
+            "status": "home"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('home_office', 84)",
+        "notification": "Turning on the home office lights.",
+        "log": "Automated lighting for convenience."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-09T23:30:06.321190Z",
+        "sensors": [
+          {
+            "type": "gps",
+            "user": "owner",
+            "status": "approaching_home",
+            "distance_meters": 365
+          },
+          {
+            "type": "temperature",
+            "location": "living_room",
+            "value_celsius": 18
+          }
+        ]
+      },
+      "output": {
+        "action": "adjust_hvac('heat', 20); turn_on_light('hallway')",
+        "notification": "Welcome home, owner! Preparing the house for your arrival.",
+        "log": "Geofence triggered for user arrival. Adjusting climate."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-10T00:18:30.321190Z",
+        "sensors": [
+          {
+            "type": "bed_occupancy",
+            "location": "main_bedroom",
+            "status": "occupied"
+          },
+          {
+            "type": "light",
+            "location": "main_bedroom",
+            "status": "on"
+          }
+        ]
+      },
+      "output": {
+        "action": "set_light_brightness('main_bedroom', 5); close_blinds(); set_system_mode('night')",
+        "notification": "Good night! Setting the room to sleep mode.",
+        "log": "Bedtime routine initiated by occupancy sensor."
+      }
+    },
+    {
+      "input": {
+        "timestamp": "2025-08-10T01:26:55.321190Z",
+        "sensors": [
+          {
+            "type": "motion",
+            "location": "outside_patio",
+            "status": "detected"
+          },
+          {
+            "type": "system_mode",
+            "status": "away"
+          },
+          {
+            "type": "light",
+            "location": "outside_patio",
+            "level_lux": 15
+          }
+        ]
+      },
+      "output": {
+        "action": "trigger_security_alarm; turn_on_all_lights(); send_push_notification()",
+        "notification": "SECURITY ALERT: Motion detected in the outside patio while the system is in Away Mode.",
+        "log": "Potential intrusion detected. High priority."
+      }
+    }
+  ]
+}
